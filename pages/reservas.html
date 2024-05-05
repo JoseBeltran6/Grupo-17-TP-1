@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <link rel="stylesheet" href="../styles/reservas_styles.css">
+</head>
+<body>
+    <header id="top">
+        <h1>Reservas</h1>
+        <section class="buttons_header">
+            <a href="Iniciar Sesión" class="button" href="#">inicio</a>
+            <a href="Registrarse" class="button" href="#">registrarse</a>   
+        </section>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sobrenosotros" class="button">Sobre Nosotros</a></li>
+            <li><a href="#container_reservas" class="button">Reservar</a></li>
+            <li><a href="#contactanos" class="button">Contactanos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="sobrenosotros">
+            <h2 class="subtitulos">Sobre Nosotros</h2>
+                <div class="contenedor-sobrenosotros">
+                    <article>parrafo</article>
+                    <article>mapa</article>
+                    <article>imagen</article>
+                </div>
+        </section>
+
+        <section>
+            <h2 class="subtitulos">Reservar</h2>
+            <section id="container_reservas">
+                <div class="container_form_resv">
+                    <form action="">
+                        <label for="Name">Nombre y apellido:</label>
+                        <input id="Name" name="Name" type="text" required>
+
+                        <label for="Mail">Correo electronico:</label>
+                        <input id="Mail" name="Mail" type="email" required>
+
+                        <label for="Date">Fecha de reserva:</label>
+                        <input id="Date" name="Date" type="date" required>
+                        
+                        <label for="Espacio"  class="label">Seleccione un espacio de trabajo:</label>
+                        <div id="Espacio_radio">
+                            <label for="Sala_juntas">Sala de juntas</label>
+                            <input id="Sala_juntas" value="Sala" name="Espacio" type="radio" required>
+                            
+                            <label for="Oficina1">Oficina 1</label>
+                            <input id="Oficina1" value="Ofi1" name="Espacio" type="radio" required>
+
+                            <label for="Oficina2">Oficina 2</label>
+                            <input id="Oficina2" value="Ofi2" name="Espacio" type="radio" required>
+
+                            <label for="Escritorios">Escritorios individuales</label>
+                            <input id="Escritorios" value="Escritorio_indv" name="Espacio" type="radio" required>
+
+                            <select id="Escritorios" name="Espacio">
+                                <option value="Escritorio1">Escritorio 1</option>
+                                <option value="Escritorio2">Escritorio 2</option>
+                                <option value="Escritorio3">Escritorio 3</option>
+                                <option value="Escritorio4">Escritorio 4</option>
+                                <option value="Escritorio5">Escritorio 5</option>
+                                <option value="Escritorio6">Escritorio 6</option>
+                                <option value="Escritorio7">Escritorio 7</option>
+                                <option value="Escritorio8">Escritorio 8</option>
+                                <option value="Escritorio9">Escritorio 9</option>
+                                <option value="Escritorio10">Escritorio 10</option>
+                            </select>
+                        </div>    
+                        
+                        <input class="button" type="reset">
+                        <input class="button" type="submit" value="Reservar">
+                    </form>
+                </div>
+
+                <div class="container_img">
+                    <img src="../src/1fb79169-942d-45b0-a5f4-2784ddc6c09c.png" alt="" id="Plano">
+                </div>
+            </section>
+        </section>
+
+        <section id="contactanos">
+            <h2 class="subtitulos">Contactanos</h2>>
+            <form action="">
+                <label for="name">nombre</label>
+                <imput name="name"type="name" type="text">
+                
+                <label for="subject">motivo</label>
+                <input name="name"type="text">
+
+                <label for="message">consulta</label>
+                <textarea name="messaje" id="" cols="30" rows="10"></textarea>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#top">Reservar S.A.</a>
+        <p>Copyright © 2024 Reservar S.A. || Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

@@ -1,4 +1,182 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url(../src/Fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
+}
+
+body{
+    background-color: rgb(100, 210, 206);
+    font-family: Ubuntu, sans-serif;
+}
+
+header, main, footer, nav {
+    padding: 10px;
+    text-align: center;
+}
+
+h1{
+    background-color: coral;
+    padding: 10px;
+}
+
+header{
+    background-color: coral;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+    background-color: rgb(21, 32, 192);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.contenedor-sobrenosotros{
+    padding: 15px;
+    display: flex;
+}
+
+article{
+    border: 1px solid black;
+    background-color: rgb(16, 95, 119);
+    width:380px;
+    min-height: 50vh;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin: 20px;
+}
+
+.button{
+    text-decoration: none;
+    padding: 10px;
+    background-color: turquoise;
+    color: rgb(9, 49, 45);
+    border-radius: 5px;
+    border-top-left-radius: 10px;
+    display: inline-block;
+    border: none;
+    transition: 250ms all;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.subtitulos {
+    background-color: coral;
+    padding: 20px 20px 20px 30px; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#container_reservas {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.container_form_resv {
+    width: 45%;
+}
+
+.container_form_resv form {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-row-gap: 25px;
+    grid-column-gap: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+#Espacio_radio {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+#Escritorios {
+    text-align: center;
+}
+
+.container_img {
+    width: 45%;
+}
+
+.container_img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.footer {
+    background-color:rgb(147, 147, 147);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+p {
+    margin-top: 15px;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px){
+    header, main, footer, nav {
+        padding: 5px;
+    }
+    
+    body{
+        font-size: 10px;
+    }   
+}
+
+@media only screen and (min-whidth: 600px){
+    header, main, nav {
+        padding: 15px;
+    }
+    
+    body{
+        font-size: 16px;
+    }       
+}
+
+@media only screen and (max-whidth: 900px){
+    header, main, footer, nav {
+        padding: 25px;
+    }
+    
+    body{
+        font-size: 20px;
+    }       
 }
