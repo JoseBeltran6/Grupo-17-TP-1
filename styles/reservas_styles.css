@@ -161,8 +161,8 @@ p {
     }   
 }
 
-@media only screen and (min-whidth: 600px){
-    header, main, nav {
+@media only screen and (min-width: 600px){
+    header, main, footer, nav {
         padding: 15px;
     }
     
@@ -171,7 +171,7 @@ p {
     }       
 }
 
-@media only screen and (max-whidth: 900px){
+@media only screen and (max-width: 900px){
     header, main, footer, nav {
         padding: 25px;
     }
